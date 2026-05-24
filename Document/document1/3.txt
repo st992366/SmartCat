@@ -1,0 +1,22 @@
+切换
+git checkout sun1 分支1
+git checkout main 主分支
+
+
+增加
+git status
+git add “”“”
+git commit -m "备注"
+git push 当前分支远程仓库
+git push origin 当前分支：推送分支
+
+合并：
+切换拉取主分支
+git checkout main   # 切到 main
+git pull origin main #把远程最新 main 同步到本地（覆盖本地 main 成最新）
+git merge sun1       # 把 sun1 的新文件 合并 到 main
+git push origin main # 推送到远程 main
+
+
+
+
