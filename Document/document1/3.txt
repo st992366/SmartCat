@@ -18,5 +18,30 @@ git merge sun1       # 把 sun1 的新文件 合并 到 main
 git push origin main # 推送到远程 main
 
 
+git checkout origin/main #直接切换到远程代码，但不会影响你本地文件
+✅ 你的文件夹瞬间变成远程最新版
+✅ 你可以看代码、打开文件、运行项目
+✅ 你原来的本地代码完全没被修改
+git ls-tree -r origin/main --name-only #查看 origin/main 里的文件
+
+git checkout main #不想看了，切回你自己的版本
+
+git fetch #把远程代码下载到本地缓存，不碰你文件
+git branch -r #看缓存了哪些分支看的是 远程仓库 的分支（GitHub 上的）
+git branch        #本地分支
+git ls-tree #看分支里有什么文件
+git diff #看远程改了什么
+
+git checkout -b 你的分支名  #创建分支创建 + 直接切换进去
+先创建，再切换
+git branch 你的分支名
+git switch 你的分支名
+
+拉取   也可以指定
+git pull
+推送
+git push
+
+
 
 
